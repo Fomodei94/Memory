@@ -1,0 +1,25 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 800px;
+}
+
+body {
+background-color: darkgrey;
+}
+
+#victory {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    color: mediumseagreen;
+}
+
+#play_btn {
+    font-weight: bold;
+    margin-left: 200px;
+    margin-top: 50px;
+    display: none;
+}
