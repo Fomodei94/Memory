@@ -1,4 +1,6 @@
 .grid {
+    margin-left: 50px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     height: 600px;
@@ -7,6 +9,10 @@
 
 body {
 background-color: darkgrey;
+background-image: url("images/avengers.png");
+background-repeat: no-repeat;
+background-size: auto;
+background-position: 65%;
 }
 
 #victory {
@@ -14,12 +20,19 @@ background-color: darkgrey;
     text-align: center;
     font-weight: bold;
     font-size: 5em;
-    color: mediumseagreen;
+    color: darkgreen;
 }
 
 #play_btn {
+    padding: 20px;
     font-weight: bold;
+    font-size: 1.6em;
     margin-left: 200px;
     margin-top: 50px;
     display: none;
+}
+
+h2 {
+    margin-left: 300px;
+    margin-top: 25px;
 }
