@@ -90,6 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         attemptsCounter++;
         displayAttempts.textContent = attemptsCounter;
+        if (attemptsCounter >= 10) {
+            document.getElementById("moves").style.color = 'red';
+        }
         cardsChosen = [];
         cardsChosenId = [];
         resultDisplay.textContent = cardsWon.length;
