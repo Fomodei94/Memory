@@ -1,7 +1,7 @@
 # Memory game
 \__________________________________________________
 
-A simple browser game written in JavaScript with minimalistic structure and style in HTML and CSS.
+A simple browser game written in vanilla JavaScript with minimalistic HTML structure and CSS style.
 
 ## Rules
 
