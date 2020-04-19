@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         attemptsCounter++;
         displayAttempts.textContent = attemptsCounter;
-        if (attemptsCounter >= 10) {
+        if (attemptsCounter >= 11) {
             document.getElementById("moves").style.color = 'red';
         }
         cardsChosen = [];
