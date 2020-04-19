@@ -41,12 +41,47 @@ body {
 }
 
 h2 {
-    margin: 50px 60% 30px 30%;
+    margin: 50px 50% 30px 30%;
     font-size: 2em;
 }
 
+#gameInfo {
+    margin-left: 20%;
+    width: 60%;
+}
+
+#difficulty {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#cardset {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#diffLabel {
+    font-weight: bold;
+    margin-left: 20%;
+    font-size: 1.2em;
+}
+
+#cardLabel {
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#startgame_btn {
+    border: 2px solid green;
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
 #footer {
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
     font-size: small;
     text-decoration: underline;

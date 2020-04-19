@@ -4,15 +4,31 @@
 
 <head>
     <title>Memory game - Fomodei94 </title>
-    <link rel="stylesheet" href="style.css"></link>
-    <script src="memory.js" charset="utf-8"></script> 
+    <link rel="stylesheet" href="style.css"></link> 
 </head>
 
 <body>
     <div class="sidebar" id="leftsdb"><div id="logo"></div></div>
 
-    <h2>Score: <span id="result"></span></h2>
-    <h2 id='moves'>Moves: <span id="attempts"></span></h2>
+    <div id="gameInfo">
+        <h2>Score: <span id="result"></span></h2>
+        <h2 id='moves'>Moves: <span id="attempts"></span></h2>
+
+        <label id="diffLabel" for="difficulty">Select difficulty: </label>
+        <select id="difficulty">
+            <option value="1">Easy</option>
+            <option value="2" selected>Normal</option>
+            <option value="3">Hard</option>
+        </select>
+
+        <label id="cardLabel" for="cardset">Choose cardset: </label>
+        <select id="cardset">
+            <option value="1" selected>Avengers</option>
+            <option value="2">Videogames</option>
+        </select>
+
+        <button id="startgame_btn" onclick="startGame()">Play now!</button>
+    </div>
 
     <h1> <span id="victory">YOU WON!!! </span> </h1>
 
@@ -28,6 +44,7 @@
 
     <div class="sidebar" id="rightsdb"></div>
 
+    <script src="memory.js" charset="utf-8"></script>
 </body>
 
 </html>
