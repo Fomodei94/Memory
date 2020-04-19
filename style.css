@@ -1,38 +1,94 @@
 .grid {
     margin-left: 50px;
-    margin-top: 25px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     height: 600px;
     width: 800px;
+    cursor: pointer, grab;
+    margin: auto;
 }
 
 body {
-background-color: darkgrey;
-background-image: url("images/avengers.png");
-background-repeat: no-repeat;
-background-size: auto;
-background-position: 65%;
+    background-color: darkgrey;
+    /* background-image: url("images/avengers.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: 80%;
+    background-position-y: 200px; */
 }
 
 #victory {
     display: none;
+    margin-left: 30%;
+    margin-right: 35%;
     text-align: center;
     font-weight: bold;
-    font-size: 5em;
-    color: darkgreen;
+    font-size: 3.5em;
+    color: green;
+    text-shadow: 3px 3px black;
 }
 
 #play_btn {
     padding: 20px;
     font-weight: bold;
-    font-size: 1.6em;
-    margin-left: 200px;
-    margin-top: 50px;
+    font-size: 1.4em;
+    margin-left: 40%;
+    margin-top: 25px;
+    border: 1px solid green;
+    border-radius: 10px;
     display: none;
 }
 
 h2 {
-    margin-left: 300px;
-    margin-top: 25px;
+    margin: 50px 60% 30px 30%;
+    font-size: 2em;
+}
+
+#footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: small;
+    text-decoration: underline;
+}
+
+#footer:hover {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#githubIcon {
+    padding-top: 15px;
+    width: 20px;
+    display: inline-block;
+}
+
+/* #githubIcon:hover {
+    width: 30px;
+} */
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+}
+
+#leftsdb {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 85%; 
+    margin: 15px;
+    background-image: url("images/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    opacity: 85%;
+}
+
+#rightsdb {
+    position: fixed;
+    top: 0;
+    right: 0;
 }
