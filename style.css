@@ -14,8 +14,9 @@ body {
     text-shadow: 1px 1px darkgrey;
     background-color: whitesmoke;
     background-image: url("images/techBigBack.jpeg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    background-attachment: scroll;
 }
 
 #victory {
@@ -118,7 +119,7 @@ h2 {
     .sidebar {
         width: 20%;
         height: 100vh;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     #leftsdb {
         position: fixed;
