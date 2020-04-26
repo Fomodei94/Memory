@@ -1,3 +1,6 @@
+var isMobile = false;
+document.addEventListener('touchstart', function(){isMobile=true;});
+
 function startGame() {
     const start_btn = document.querySelector('#startgame_btn');
     const diffSelector = document.querySelector('#difficulty');
@@ -9,6 +12,8 @@ function startGame() {
     var cardset = Number(cardsetSelector.options[cardsetSelector.selectedIndex].value);
     var cardArray = [];
     var cbackPath;
+
+    document.removeEventListener('touchstart', function(){isMobile=true;});
 
     if(cardset === 1) {
 
@@ -183,7 +188,8 @@ function startGame() {
                 var card = document.createElement('img');
                 card.setAttribute('src', cbackPath);
                 card.setAttribute('data-id', i);
-                card.addEventListener('click', flipcard);
+                if(isMobile) card.ontouchstart = flipcard;
+                else { card.addEventListener('click', flipcard); }
                 grid.appendChild(card);
             }
         }
@@ -195,9 +201,11 @@ function startGame() {
             if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] != cardsChosenId[1]) {
                 alert('You found a match!');
                 cards[optionOneId].setAttribute('src', 'images/blank.png');
-                cards[optionOneId].removeEventListener('click', flipcard);
+                if(isMobile) { cards[optionOneId].ontouchstart = null; }
+                else { cards[optionOneId].removeEventListener('click', flipcard); }
                 cards[optionTwoId].setAttribute('src', 'images/blank.png');
-                cards[optionTwoId].removeEventListener('click', flipcard);
+                if(isMobile) { cards[optionTwoId].ontouchstart = null; }
+                else { cards[optionTwoId].removeEventListener('click', flipcard); }
                 cardsWon.push(cardsChosen);
             } else {
                 cards[optionOneId].setAttribute('src', cbackPath);
@@ -228,15 +236,18 @@ function startGame() {
         }
     
         function flipcard() {
-            var cardId = this.getAttribute('data-id');
-            cardsChosen.push(cardArray[cardId].name);
-            cardsChosenId.push(cardId);
-            this.setAttribute('src', cardArray[cardId].img);
-            if (cardsChosen.length === 2) {
-                setTimeout(checkForMatch, 100);
+            if(document.readyState == "complete") {
+                var cardId = this.getAttribute('data-id');
+                cardsChosen.push(cardArray[cardId].name);
+                cardsChosenId.push(cardId);
+                this.setAttribute('src', cardArray[cardId].img);
+                if (cardsChosen.length === 2) {
+                    setTimeout(checkForMatch, 100);
+                }
+            } else {
+                setTimeout(flipcard, 200);
             }
     
         }
-    
         createBoard();
 }
