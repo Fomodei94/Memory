@@ -1,3 +1,12 @@
+body {
+    color: lightblue;
+    text-shadow: 1px 1px darkgrey;
+    background-color: grey;
+    background-image: url("images/techBigBack.jpeg");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: scroll;
+}
 
 .grid {
     margin-left: 50px;
@@ -7,16 +16,6 @@
     min-height: 400px;
     max-width: 800px;
     margin: auto;
-}
-
-body {
-    color: lightblue;
-    text-shadow: 1px 1px darkgrey;
-    background-color: whitesmoke;
-    background-image: url("images/techBigBack.jpeg");
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    background-attachment: scroll;
 }
 
 #victory {

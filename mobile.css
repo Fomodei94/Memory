@@ -8,6 +8,9 @@
 
 body {
     font-size: larger;
+    background-color: grey;
+    background-image: url("images/techBigBack.jpeg");
+    /* background-size: cover; */
 }
 
 #score, #moves {
@@ -18,9 +21,12 @@ body {
 }
 
 #victory {
+    margin-left: initial;
+    margin-right: initial;
+    font-size: 3.7em;
     text-align: center;
     width: 100%;
-    margin: 15%;
+    margin-top: 40px;
 }
 
 #diffLabel, #cardLabel {
