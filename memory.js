@@ -242,7 +242,7 @@ function startGame() {
                 cardsChosenId.push(cardId);
                 this.setAttribute('src', cardArray[cardId].img);
                 if (cardsChosen.length === 2) {
-                    setTimeout(checkForMatch, 100);
+                    setTimeout(checkForMatch, 300);
                 }
             } else {
                 setTimeout(flipcard, 500);
