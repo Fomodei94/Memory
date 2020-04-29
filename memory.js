@@ -245,7 +245,7 @@ function startGame() {
                     setTimeout(checkForMatch, 100);
                 }
             } else {
-                setTimeout(flipcard, 200);
+                setTimeout(flipcard, 500);
             }
     
         }
