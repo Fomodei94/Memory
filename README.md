@@ -1,12 +1,12 @@
 # Memory game
 
-A simple browser game written in vanilla JavaScript with minimalistic HTML structure and CSS style.
+A simple browser game written in vanilla JavaScript with minimalist HTML structure and CSS style.
 
 ## Rules
 
 At beginning of the game there is a board of cards turned upside-down, showing only their back side. Each card has exactly one twin-card, with the same front image.  
 
-The game consist on chosing a pair of cards per move from the cardboard. Once clicked a card is flipped, showing its front image:
+The game consist on choosing a pair of cards per move from the cardboard. Once clicked a card is flipped, showing its front image:
 - If the two cards chosen have the same front image, they're removed from the cardboard and you gain a point. 
 
 - If the chosen pair of cards have not the same image on them you gain no points; you must try to memorize their position because the cards are flipped back and you'll have to retry couple them with their twins during next rounds of flipping.
