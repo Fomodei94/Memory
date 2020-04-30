@@ -1,3 +1,12 @@
+/* 
+BASIC VANILLA JS MEMORY GAME
+Author: Fomodei94  federico.omodei[at]gmail.com
+Github: github.com/Fomodei94
+
+Dependencies: none, just a web browser with JS support.
+Last update: 2020-04-28
+*/
+
 var isMobile = false;
 document.addEventListener('touchstart', function(){isMobile=true;});
 
@@ -5,6 +14,8 @@ function startGame() {
     const start_btn = document.querySelector('#startgame_btn');
     const diffSelector = document.querySelector('#difficulty');
     const cardsetSelector = document.querySelector('#cardset');
+    const diffLabel = document.querySelector('#diffLabel');
+    const cardsetLabel = document.querySelector('#cardLabel');
 
     start_btn.innerHTML = 'Reload';
     start_btn.setAttribute('onclick', 'location.reload()');
@@ -12,6 +23,11 @@ function startGame() {
     var cardset = Number(cardsetSelector.options[cardsetSelector.selectedIndex].value);
     var cardArray = [];
     var cbackPath;
+
+    diffSelector.style.display = 'none';
+    cardsetSelector.style.display = 'none';
+    diffLabel.style.display = 'none';
+    cardsetLabel.style.display = 'none';
 
     document.removeEventListener('touchstart', function(){isMobile=true;});
 
