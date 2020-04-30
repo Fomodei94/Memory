@@ -29,6 +29,9 @@ The game is intented to be basic (especially in Css style), but over time some l
 
 To run the game you don't need any particular dependency. All you need is a web browser with JS support and to make sure you have all assets in their place into _images_ folder.
 
+A screenshot on a desktop browser:
+![A screenshot on desktop browser](images/screen.png)
+
 If you have any suggestion/problem/question please email me or open a Github issue.
 
 | Name | Github profile | Email |
